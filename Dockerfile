@@ -1,5 +1,5 @@
 FROM gcc:13
-ARG sandbox_version=1.6.7
+ARG sandbox_version=1.6.10
 ADD https://github.com/criyle/go-judge/releases/download/v${sandbox_version}/executorserver_${sandbox_version}_linux_amd64 /usr/bin/sandbox
 RUN apt-get -qq update && \
     apt-get install -qq -y pypy3 openjdk-17-jdk-headless nodejs yarnpkg && \
